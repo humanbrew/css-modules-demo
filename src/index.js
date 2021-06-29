@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import { appInfo } from './constants/appInfo';
+import Root from './routers/root';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+
+const supportsHistory = 'pushState' in window.history && false
+
+const { dir } = appInfo;
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter
+    basename={dir}
+    forceRefresh={!supportsHistory}
+  >
+    <Root />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

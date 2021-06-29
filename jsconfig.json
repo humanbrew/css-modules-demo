@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "jsx": "react",
+    "paths": {
+      "@views/*": ["views/*"],
+      "@components/*": ["components/*"],
+      "@lib": ["components/lib/index.js"],
+      "@lib/*": ["components/lib/*"],
+      "@api/*": ["api/*"],
+      "@constants/*": ["constants/*"],
+      "@config/*": [
+        "config/*"
+      ],
+      "@dispatcher/*": ["dispatcher/*"],
+      "@store/*": ["store/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"],
+      "@hocs/*": ["hocs/*"],
+      "@images/*": ["images/beibeibang/*"],
+      "@routers/*": ["routers/*"]
+    }
+  },
+  "exclude": ["**/*/node_modules", "build", "coverage", "jsconfig.json"]
+}
