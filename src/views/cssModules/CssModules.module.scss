@@ -1,0 +1,19 @@
+.block {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  background: #fff;
+  font-size: 48px;
+  color: #008a83;
+  text-align: center;
+  &:hover {
+    text-decoration: underline;
+  }
+  .main {
+    margin-bottom: 20px;
+  }
+  .section {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+  }
+}
