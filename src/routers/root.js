@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <Switch>
       {RoutersMap(router)}
-      <Redirect to="/home" />
+      <Redirect to="/" />
     </Switch>
   )
 }

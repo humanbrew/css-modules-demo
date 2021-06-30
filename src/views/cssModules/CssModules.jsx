@@ -1,15 +1,22 @@
 import React from 'react';
 
-import styles from './CssModules.module.scss';
+import stylesSass from './CssModules.module.scss';
+import stylesLess from './CssModules.module.less';
 
-const CssModules = () => {
+const CssModules = (props) => {
+  const { styleSyntax } = props;
+  const isStyleLess = styleSyntax === 'less';
+  const styles = isStyleLess ? stylesLess : stylesSass;
+
   return (
-    <>
-      <div className={styles.block}>
-        <div className={styles.main}>hello world, I am Emotion! 😁</div>
-        <div className={styles.section}>This is a section</div>
+    <div className={styles.block}>
+      <div className={styles.main}>hello world, I am Css Modules! 😁</div>
+      <div className={styles.section}>This is a section</div>
+      <div className={styles.styleSyntax}>
+        {`Style syntax is `}
+        <span className="syntaxName">{isStyleLess ? "Less" : 'Sass'}</span>
       </div>
-    </>
+    </div>
   )
 }
 

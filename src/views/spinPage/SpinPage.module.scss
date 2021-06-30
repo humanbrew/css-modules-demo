@@ -1,0 +1,15 @@
+.spinWrapper {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:global {
+  .ant-spin-dot-item {
+    background-color: #008a83;
+  }
+  .ant-spin-text {
+    color: #008a83;
+  }
+}

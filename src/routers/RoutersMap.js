@@ -5,10 +5,10 @@ import RouterLoader from './RouterLoader';
 const RoutersMap = (routerList) => {
   return (
     routerList.map((route) => {
-      const { component, ...routeToProps } = route
+      const { component, props: userDefinedProps = {}, ...routeToProps } = route;
       const _route = {
         ...routeToProps,
-        component: RouterLoader(component),
+        component: RouterLoader(component, userDefinedProps),
       }
       return (
         <Route key={route.path} {..._route} />

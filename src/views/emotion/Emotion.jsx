@@ -1,5 +1,5 @@
-/** @jsxImportSource @emotion/react */
-import { jsx, css } from '@emotion/react';
+import React from 'react';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled'
 
 const Emotion = () => {
@@ -7,6 +7,7 @@ const Emotion = () => {
     font-family: 'Times New Roman', Times, serif;
     font-size: 26px;
   `
+
   const mainStyle = css`
     margin-bottom: 20px;
   `
