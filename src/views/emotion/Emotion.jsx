@@ -1,4 +1,5 @@
 /** @jsxImportSource @emotion/react */
+// eslint-disable-next-line no-unused-vars
 import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled'
 
@@ -28,7 +29,7 @@ const Emotion = () => {
         }
       `}
       >
-        <div css={mainStyle} >hello world, I am Emotion! 😁</div>
+        <div css={mainStyle} >Hello world, I am Emotion! 😁</div>
         <Section>This is a section</Section>
       </div>
     </>

@@ -1,4 +1,3 @@
-// import { jsx, css } from '@emotion/react';
 import styled from 'styled-components';
 
 const StyledComponents = () => {
@@ -25,7 +24,7 @@ const StyledComponents = () => {
   return (
     <>
       <Block>
-        <Main>hello world, I am styled-components! 😁</Main>
+        <Main>Hello world, I am styled-components! 😁</Main>
         <Section>This is a section</Section>
       </Block>
     </>

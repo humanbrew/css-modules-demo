@@ -10,7 +10,7 @@ const CssModules = (props) => {
 
   return (
     <div className={styles.block}>
-      <div className={styles.main}>hello world, I am Css Modules! 😁</div>
+      <div className={styles.main}>Hello world, I am Css Modules! 😁</div>
       <div className={styles.section}>This is a section</div>
       <div className={styles.styleSyntax}>
         {`Style syntax is `}
